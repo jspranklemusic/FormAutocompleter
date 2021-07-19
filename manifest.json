@@ -1,0 +1,22 @@
+{
+
+  "description": "Auto-completing HTML forms with random data",
+  "manifest_version": 2,
+  "name": "FormFiller",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": {
+      "32": "icons/check.png"
+    }
+  },
+  "content_scripts": [
+    {
+     "matches":["<all_urls>"], 
+      "js": ["form-filler.js"]
+    }
+  ],
+  "background":{
+    "scripts":["background-handler.js"]
+  }
+
+}
