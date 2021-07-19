@@ -80,7 +80,7 @@ class FormFiller{
         this.color = this.colors[Math.floor(Math.random()*this.colors.length)]
         this.maiden = this.lastnames[Math.floor(Math.random()*this.lastnames.length)]
         this.password = "!" + this.first + this.last + this.timestamp
-        this.email = (this.first + this.last + this.timestamp + "@mail.com").toLowerCase();
+        this.email = (this.first + this.last + this.timestamp + "@hotmail.com").toLowerCase();
         this.username = (this.first + this.last + this.timestamp).toLowerCase().slice(0,16)
         this.phonenumber = 10000000 - ((Math.floor(Math.random()*10000000)) + 1)
         this.fullphonenumber = this.areacode + "" + this.phonenumber
@@ -189,9 +189,6 @@ class FormFiller{
                 elem.value = "foobar"
                 elem.dispatchEvent(new Event('change'));
             }
-           
-
-            
             
         }
     }
